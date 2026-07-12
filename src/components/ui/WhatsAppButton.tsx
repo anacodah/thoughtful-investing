@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { MessageCircle } from 'lucide-react';
+
 
 // ── Replace with your actual WhatsApp number in international format ──
 // Example: India (+91) → '919876543210'

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { PieChart, Landmark, TrendingUp, Briefcase, Globe, ArrowRight, ShieldAlert } from 'lucide-react';
 
 const investmentProducts = [

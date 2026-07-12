@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Check, Target, Calculator, Clock, Briefcase, Activity, ShieldCheck, Car, ShoppingBag, Plane, GraduationCap, Home, Heart, TrendingUp, AlertCircle, Sparkles, MonitorSmartphone } from 'lucide-react';
 
 const alignmentItems = [
