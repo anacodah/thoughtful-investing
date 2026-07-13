@@ -69,7 +69,7 @@ export const NAV_ITEMS: NavItem[] = [
   },
   {
     label: 'Value Added Services',
-    href: '/value-added',
+    href: '/value-added-services',
     dropdownItems: [
       { label: 'Insurance', href: '#vas-insurance', description: 'Comprehensive risk coverage through Life, Medical, and General insurance.' },
       { label: 'Loans', href: '#vas-loans', description: 'Mortgages, Personal, and Leverage against existing mutual funds.' },

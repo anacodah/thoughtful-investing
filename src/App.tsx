@@ -75,9 +75,12 @@ function LegalPage({ title, lastUpdated, content }: LegalPageProps) {
   );
 }
 
+import ScrollToTop from './components/layout/ScrollToTop';
+
 export default function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="flex flex-col min-h-screen bg-cream selection:bg-teal/10 selection:text-teal overflow-x-hidden w-full max-w-[100vw]">
         <Navbar />
         <main className="flex-grow w-full">
@@ -86,7 +89,7 @@ export default function App() {
             <Route path="/goal-planning" element={<GoalPlanningPage />} />
             <Route path="/investments" element={<InvestmentsPage />} />
             <Route path="/smart-ideas" element={<SmartIdeasPage />} />
-            <Route path="/value-added" element={<ValueAddedPage />} />
+            <Route path="/value-added-services" element={<ValueAddedPage />} />
             <Route
               path="/privacy"
               element={

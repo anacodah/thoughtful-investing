@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 import { PieChart, Landmark, TrendingUp, Briefcase, Globe, ArrowRight, ShieldAlert } from 'lucide-react';
 
 const investmentProducts = [
@@ -84,7 +85,12 @@ export default function InvestmentsPage() {
   const [activeProductId, setActiveProductId] = useState(investmentProducts[0].id);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-teal/5 via-cream to-cyan-100/30">
+    <motion.div 
+      initial={{ opacity: 0, y: 20 }} 
+      animate={{ opacity: 1, y: 0 }} 
+      transition={{ duration: 0.6, ease: 'easeOut' }}
+      className="min-h-screen bg-gradient-to-br from-teal/5 via-cream to-cyan-100/30"
+    >
       {/* Dark Premium Header */}
       <div className="pt-12 pb-12 px-6 bg-gradient-to-br from-slate-900 via-blue-950 to-cyan-900 text-center relative overflow-hidden">
         {/* Decorative elements */}
@@ -184,6 +190,6 @@ export default function InvestmentsPage() {
         </div>
 
       </div>
-    </div>
+    </motion.div>
   );
 }

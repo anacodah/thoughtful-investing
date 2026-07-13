@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 import { Check, Target, Calculator, Clock, Briefcase, Activity, ShieldCheck, Car, ShoppingBag, Plane, GraduationCap, Home, Heart, TrendingUp, AlertCircle, Sparkles, MonitorSmartphone } from 'lucide-react';
 
 const alignmentItems = [
@@ -236,11 +237,25 @@ export default function GoalPlanningPage() {
   const [activeGoalId, setActiveGoalId] = useState(lifeGoalsData[0].id);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-teal/5 via-cream to-cyan-100/30">
-      {/* Page Header */}
-      <div className="pt-12 pb-12 px-6 text-center border-b border-slate-light/5">
-        <span className="text-xs font-bold uppercase tracking-wider text-teal">Our Approach</span>
-        <h1 className="text-4xl md:text-5xl font-serif font-bold text-slate mt-3">Goal Based Planning</h1>
+    <motion.div 
+      initial={{ opacity: 0, y: 20 }} 
+      animate={{ opacity: 1, y: 0 }} 
+      transition={{ duration: 0.6, ease: 'easeOut' }}
+      className="min-h-screen bg-gradient-to-br from-teal/5 via-cream to-cyan-100/30"
+    >
+      {/* Dark Premium Header */}
+      <div className="pt-12 pb-12 px-6 bg-gradient-to-br from-slate-900 via-blue-950 to-cyan-900 text-center relative overflow-hidden">
+        {/* Decorative elements */}
+        <div className="absolute top-0 left-0 w-full h-full bg-[linear-gradient(to_right,#ffffff0a_1px,transparent_1px),linear-gradient(to_bottom,#ffffff0a_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-teal-500/20 rounded-full blur-[100px] pointer-events-none"></div>
+        
+        <div className="relative z-10 max-w-3xl mx-auto">
+          <span className="text-xs font-bold uppercase tracking-widest text-teal-400 mb-4 block">Our Approach</span>
+          <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">Goal Based Planning</h1>
+          <p className="text-cyan-100/80 text-lg md:text-xl font-light leading-relaxed">
+            We believe investing should have a purpose. By aligning your investments with specific life milestones, we create clarity, discipline, and a higher probability of success.
+          </p>
+        </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-6 md:px-8 py-16 space-y-32">
@@ -411,6 +426,6 @@ export default function GoalPlanningPage() {
         </div>
 
       </div>
-    </div>
+    </motion.div>
   );
 }
