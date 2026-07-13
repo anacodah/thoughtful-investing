@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Lightbulb, TrendingUp, ShieldCheck, PieChart, Landmark, ArrowRight, BarChart3, Activity, Calculator } from 'lucide-react';
+import { TrendingUp, ShieldCheck, PieChart, Landmark, ArrowRight, BarChart3, Activity, Calculator } from 'lucide-react';
 
 const smartStrategies = [
   {
