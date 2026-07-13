@@ -71,9 +71,9 @@ export default function SmartIdeasPage() {
   const [activeStrategyId, setActiveStrategyId] = useState(smartStrategies[0].id);
 
   return (
-    <motion.div 
-      initial={{ opacity: 0, y: 20 }} 
-      animate={{ opacity: 1, y: 0 }} 
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: 'easeOut' }}
       className="min-h-screen bg-gradient-to-br from-teal/5 via-cream to-cyan-100/30"
     >
@@ -116,8 +116,8 @@ export default function SmartIdeasPage() {
                       key={strategy.id}
                       onClick={() => setActiveStrategyId(strategy.id)}
                       className={`w-full flex items-center justify-between px-5 py-4 rounded-xl transition-all text-left group ${isActive
-                          ? 'bg-slate-900 shadow-md border-transparent text-white'
-                          : 'bg-white border border-slate-200 text-slate hover:border-teal-500/30 hover:shadow-sm'
+                        ? 'bg-slate-900 shadow-md border-transparent text-white'
+                        : 'bg-white border border-slate-200 text-slate hover:border-teal-500/30 hover:shadow-sm'
                         }`}
                     >
                       <div className="flex items-center space-x-4">
