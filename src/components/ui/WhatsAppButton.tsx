@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 // ── Replace with your actual WhatsApp number in international format ──
 // Example: India (+91) → '919876543210'
-const WHATSAPP_NUMBER = 'XXXXXXXXXX';
+const WHATSAPP_NUMBER = '918356907979';
 const WHATSAPP_MESSAGE = encodeURIComponent(
   "Hello! I'm interested in learning more about your financial planning services."
 );
