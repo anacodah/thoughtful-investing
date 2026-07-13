@@ -48,7 +48,7 @@ export default function Footer() {
         {/* Legal Disclaimer Block */}
         <div className="py-8 border-b border-slate-light/10 text-[11px] leading-relaxed text-slate-light/60 space-y-3">
           <p>
-            <strong>Disclaimer:</strong> Thoughtful Investing is an AMFI-registered Mutual Fund Distributor (ARN-189284) operating in India. Mutual Fund investments are subject to market risks, read all scheme-related documents carefully before investing. Past performance is not indicative of future yields or returns.
+            <strong>Disclaimer:</strong> Thoughtful Investing is an AMFI-registered Mutual Fund Distributor (ARN-321065) operating in India. Mutual Fund investments are subject to market risks, read all scheme-related documents carefully before investing. Past performance is not indicative of future yields or returns.
           </p>
           <p>
             The content provided on this website is for informational and educational purposes only and should not be construed as legal, tax, investment, financial, or other professional advice. We do not guarantee any specific returns. Asset allocation and diversification do not guarantee a profit or protect against loss in declining markets.
