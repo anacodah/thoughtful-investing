@@ -92,7 +92,7 @@ export default function Hero() {
               </Button>
               <Button
                 variant="outline"
-                href="#philosophy"
+                href="/philosophy"
                 className="w-full sm:w-auto"
               >
                 Our Philosophy

@@ -14,6 +14,8 @@ import GoalPlanningPage from './pages/GoalPlanningPage';
 import InvestmentsPage from './pages/InvestmentsPage';
 import SmartIdeasPage from './pages/SmartIdeasPage';
 import ValueAddedPage from './pages/ValueAddedPage';
+import PhilosophyPage from './pages/PhilosophyPage';
+import ContactPage from './pages/ContactPage';
 
 // Thin shimmer gradient line between sections
 function SectionDivider() {
@@ -90,6 +92,8 @@ export default function App() {
             <Route path="/investments" element={<InvestmentsPage />} />
             <Route path="/smart-ideas" element={<SmartIdeasPage />} />
             <Route path="/value-added-services" element={<ValueAddedPage />} />
+            <Route path="/philosophy" element={<PhilosophyPage />} />
+            <Route path="/contact" element={<ContactPage />} />
             <Route
               path="/privacy"
               element={

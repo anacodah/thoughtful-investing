@@ -32,7 +32,7 @@ export interface ServiceCategory {
 
 export const NAV_ITEMS: NavItem[] = [
   { label: 'Home', href: '/' },
-  { label: 'Our Philosophy', href: '#philosophy' },
+  { label: 'Our Philosophy', href: '/philosophy' },
   {
     label: 'Goal Based Planning',
     href: '/goal-planning',
@@ -76,7 +76,7 @@ export const NAV_ITEMS: NavItem[] = [
       { label: 'Estate Planning', href: '#vas-estate', description: 'Will drafting and documentation to ensure seamless inheritance.' }
     ]
   },
-  { label: 'Contact', href: '#contact' }
+  { label: 'Contact', href: '/contact' }
 ];
 
 export const PHILOSOPHY_PRINCIPLES: PhilosophyPrinciple[] = [
