@@ -279,7 +279,7 @@ export const FOUNDER_DATA = {
 export const CONTACT_INFO = {
   email: 'support@thoughtfulinvesting.in',
   phone: '+91 8356907979',
-  whatsapp: '+91 8356907979',
+  whatsapp: '918356907979',
   address: 'Suite 402, Signature Towers, BKC, Mumbai - 400051',
   workingHours: 'Mon - Fri: 9:30 AM - 6:30 PM | Sat: By Appointment Only',
   web3FormsKey: 'YOUR_ACCESS_KEY_HERE' // Placeholder for users to customize
