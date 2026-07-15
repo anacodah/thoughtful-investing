@@ -1,13 +1,11 @@
 import { motion } from 'framer-motion';
+import { CONTACT_INFO } from '../../data/siteData';
 
-
-// ── Replace with your actual WhatsApp number in international format ──
-// Example: India (+91) → '919876543210'
-const WHATSAPP_NUMBER = '918356907979';
+// WhatsApp number is managed centrally in src/data/siteData.ts → CONTACT_INFO.whatsapp
 const WHATSAPP_MESSAGE = encodeURIComponent(
   "Hello! I'm interested in learning more about your financial planning services."
 );
-const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}`;
+const WHATSAPP_URL = `https://wa.me/${CONTACT_INFO.whatsapp}?text=${WHATSAPP_MESSAGE}`;
 
 export default function WhatsAppButton() {
   return (

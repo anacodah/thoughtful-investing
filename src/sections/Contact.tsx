@@ -26,7 +26,7 @@ export default function Contact() {
     setErrorMessage('');
 
     // If key is not configured, simulate a successful premium submission for demo purposes
-    if (CONTACT_INFO.web3FormsKey === 'YOUR_ACCESS_KEY_HERE') {
+    if (!CONTACT_INFO.web3FormsKey) {
       setTimeout(() => {
         setStatus('success');
         setFormData({ name: '', email: '', phone: '', goal: 'Retirement Planning', message: '' });
@@ -35,6 +35,27 @@ export default function Contact() {
     }
 
     try {
+      const htmlBody = `
+        <div style="font-family: Georgia, serif; max-width: 600px; margin: 0 auto; background: #f8f9fa; border-radius: 12px; overflow: hidden; border: 1px solid #e2e8f0;">
+          <div style="background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%); padding: 32px 36px; text-align: center;">
+            <h1 style="color: #ffffff; font-size: 22px; margin: 0; letter-spacing: 0.5px;">Thoughtful Investing</h1>
+            <p style="color: #94a3b8; font-size: 13px; margin: 6px 0 0;">New Consultation Inquiry</p>
+          </div>
+          <div style="padding: 32px 36px; background: #ffffff;">
+            <table style="width: 100%; border-collapse: collapse;">
+              <tr><td style="padding: 12px 0; border-bottom: 1px solid #f1f5f9; color: #64748b; font-size: 12px; font-family: sans-serif; text-transform: uppercase; letter-spacing: 0.5px; width: 110px;">Name</td><td style="padding: 12px 0; border-bottom: 1px solid #f1f5f9; color: #0f172a; font-size: 15px; font-weight: bold;">${formData.name}</td></tr>
+              <tr><td style="padding: 12px 0; border-bottom: 1px solid #f1f5f9; color: #64748b; font-size: 12px; font-family: sans-serif; text-transform: uppercase; letter-spacing: 0.5px;">Email</td><td style="padding: 12px 0; border-bottom: 1px solid #f1f5f9;"><a href="mailto:${formData.email}" style="color: #0e7490; font-size: 15px;">${formData.email}</a></td></tr>
+              <tr><td style="padding: 12px 0; border-bottom: 1px solid #f1f5f9; color: #64748b; font-size: 12px; font-family: sans-serif; text-transform: uppercase; letter-spacing: 0.5px;">Phone</td><td style="padding: 12px 0; border-bottom: 1px solid #f1f5f9;"><a href="tel:${formData.phone}" style="color: #0e7490; font-size: 15px;">${formData.phone}</a></td></tr>
+              <tr><td style="padding: 12px 0; border-bottom: 1px solid #f1f5f9; color: #64748b; font-size: 12px; font-family: sans-serif; text-transform: uppercase; letter-spacing: 0.5px;">Goal</td><td style="padding: 12px 0; border-bottom: 1px solid #f1f5f9;"><span style="background: #f0fdf4; color: #166534; padding: 3px 10px; border-radius: 20px; font-size: 13px; font-family: sans-serif; font-weight: 600;">${formData.goal}</span></td></tr>
+              <tr><td style="padding: 16px 0 4px; color: #64748b; font-size: 12px; font-family: sans-serif; text-transform: uppercase; letter-spacing: 0.5px; vertical-align: top;">Message</td><td style="padding: 16px 0 4px; color: #334155; font-size: 14px; font-family: sans-serif; line-height: 1.6;">${formData.message || '<em style="color:#94a3b8">No message provided</em>'}</td></tr>
+            </table>
+          </div>
+          <div style="background: #f8fafc; padding: 20px 36px; text-align: center; border-top: 1px solid #e2e8f0;">
+            <p style="color: #94a3b8; font-size: 11px; font-family: sans-serif; margin: 0;">Submitted via thoughtfulinvesting.in &nbsp;·&nbsp; ${new Date().toLocaleString('en-IN', { dateStyle: 'long', timeStyle: 'short' })}</p>
+          </div>
+        </div>
+      `;
+
       const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: {
@@ -43,9 +64,14 @@ export default function Contact() {
         },
         body: JSON.stringify({
           access_key: CONTACT_INFO.web3FormsKey,
-          subject: `Consultation Inquiry from ${formData.name}`,
-          from_name: 'Thoughtful Investing Website',
-          ...formData
+          subject: `New Inquiry — ${formData.goal} | ${formData.name}`,
+          from_name: 'Thoughtful Investing',
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          goal: formData.goal,
+          message: htmlBody,
+          html: true,
         })
       });
 
