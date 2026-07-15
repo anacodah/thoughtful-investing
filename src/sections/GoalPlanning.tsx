@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, Home, TrendingUp, GraduationCap, Heart, Shield, AlertCircle } from 'lucide-react';
 import { SectionHeader } from '../components/ui/SectionHeader';
+import GoalCalculatorModal from '../components/calculators/GoalCalculatorModal';
 
 const GOALS = [
   {
@@ -74,6 +75,7 @@ const GOALS = [
 
 export default function GoalPlanning() {
   const [activeId, setActiveId] = useState<string>('wedding');
+  const [activeCalculatorGoal, setActiveCalculatorGoal] = useState<string | null>(null);
 
   return (
     <section
@@ -115,11 +117,10 @@ export default function GoalPlanning() {
 
                 {/* Dark gradient overlay */}
                 <div
-                  className={`absolute inset-0 transition-all duration-500 ${
-                    isActive
+                  className={`absolute inset-0 transition-all duration-500 ${isActive
                       ? 'bg-gradient-to-t from-slate/90 via-slate/40 to-slate/10'
                       : 'bg-gradient-to-t from-slate/85 via-teal/40 to-slate/30'
-                  }`}
+                    }`}
                 />
 
                 {/* Turquoise-blue gradient accent at top */}
@@ -170,9 +171,12 @@ export default function GoalPlanning() {
 
                       {/* CTAs */}
                       <div className="flex flex-wrap items-center gap-3">
-                        <span className="inline-flex items-center gap-1.5 rounded-full border border-white/30 bg-white/10 backdrop-blur-sm px-4 py-2 text-xs font-semibold text-white hover:bg-white/20 transition-colors cursor-pointer">
+                        <button
+                          onClick={(e) => { e.stopPropagation(); setActiveCalculatorGoal(goal.id); }}
+                          className="inline-flex items-center gap-1.5 rounded-full border border-white/30 bg-white/10 backdrop-blur-sm px-4 py-2 text-xs font-semibold text-white hover:bg-white/20 transition-colors cursor-pointer"
+                        >
                           {goal.tag}
-                        </span>
+                        </button>
                         <a
                           href="#contact"
                           onClick={(e) => e.stopPropagation()}
@@ -199,6 +203,11 @@ export default function GoalPlanning() {
           })}
         </div>
       </div>
+
+      <GoalCalculatorModal 
+        goalId={activeCalculatorGoal} 
+        onClose={() => setActiveCalculatorGoal(null)} 
+      />
     </section>
   );
 }

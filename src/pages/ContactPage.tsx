@@ -87,12 +87,12 @@ export default function ContactPage() {
 
       <div className="relative mx-auto max-w-7xl px-6 md:px-8 -mt-16">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-12">
-          
+
           {/* Contact Details Left Column */}
           <div className="lg:col-span-5 text-left space-y-6">
             {/* Direct Channels Cards */}
             <div className="space-y-4">
-              
+
               {/* WhatsApp Card */}
               <a
                 href={`https://wa.me/${CONTACT_INFO.whatsapp}?text=Hi%20Siddharth%2C%20I'd%20like%20to%20schedule%20a%20wealth%20consultation.`}
@@ -157,7 +157,7 @@ export default function ContactPage() {
           <div className="lg:col-span-7">
             <div className="rounded-2xl border border-slate-100 bg-white p-8 sm:p-10 shadow-lg shadow-slate-900/5">
               <h3 className="font-serif text-2xl font-bold text-slate mb-6">Inquiry Form</h3>
-              
+
               {status === 'success' ? (
                 <div className="flex h-full min-h-[300px] flex-col items-center justify-center space-y-4 text-center">
                   <div className="flex h-16 w-16 items-center justify-center rounded-full bg-teal/10">
@@ -243,7 +243,7 @@ export default function ContactPage() {
                           <option value="Other">Other / General Inquiry</option>
                         </select>
                         <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-slate-light">
-                          <svg className="h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                          <svg className="h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
                         </div>
                       </div>
                     </div>
