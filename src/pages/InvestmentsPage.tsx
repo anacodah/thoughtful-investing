@@ -166,10 +166,10 @@ export default function InvestmentsPage() {
                   </div>
                   
                   <div className="mt-12 pt-8 border-t border-slate-100">
-                    <button className="bg-slate-900 text-white px-8 py-3 rounded-full font-semibold hover:bg-slate-800 transition-colors shadow-md hover:shadow-lg flex items-center space-x-2">
+                    <a href="/contact" className="inline-flex items-center space-x-2 bg-slate-900 text-white px-8 py-3 rounded-full font-semibold hover:bg-slate-800 transition-colors shadow-md hover:shadow-lg">
                       <span>Discuss this solution</span>
                       <ArrowRight className="h-4 w-4" />
-                    </button>
+                    </a>
                   </div>
                 </div>
               );
