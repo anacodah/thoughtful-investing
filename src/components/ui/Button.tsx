@@ -1,11 +1,11 @@
-import React from 'react';
+import { ButtonHTMLAttributes, ReactNode } from 'react';
 import { motion } from 'framer-motion';
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary' | 'outline' | 'text';
   size?: 'sm' | 'md' | 'lg';
   href?: string;
-  icon?: React.ReactNode;
+  icon?: ReactNode;
   iconPosition?: 'left' | 'right';
   className?: string;
 }

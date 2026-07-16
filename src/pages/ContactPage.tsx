@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { CONTACT_INFO, GOALS } from '../data/siteData';
 import { Mail, Phone, MessageSquare, Send, CheckCircle2, AlertTriangle, Loader2 } from 'lucide-react';
 import { motion } from 'framer-motion';
