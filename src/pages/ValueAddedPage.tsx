@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Shield, HeartPulse, Car, Landmark, FileText, ShieldAlert, ShieldCheck, Plane, Home, CreditCard, BadgeIndianRupee, TrendingUp, Users, CheckCircle2 } from 'lucide-react';
 
@@ -203,7 +204,19 @@ const tabs = [
 ];
 
 export default function ValueAddedPage() {
+  const location = useLocation();
   const [activeId, setActiveId] = useState('insurance');
+
+  useEffect(() => {
+    if (location.hash) {
+      const hashId = location.hash.replace('#', '');
+      if (tabs.some(t => t.id === hashId)) {
+        setActiveId(hashId);
+        setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
+      }
+    }
+  }, [location.hash]);
+
   const active = tabs.find(t => t.id === activeId)!;
 
   return (

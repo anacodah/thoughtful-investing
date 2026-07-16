@@ -37,43 +37,43 @@ export const NAV_ITEMS: NavItem[] = [
     label: 'Goal Based Planning',
     href: '/goal-planning',
     dropdownItems: [
-      { label: 'Dream Home', href: '#goals-home', description: 'Plan and secure the capital for your primary residence or vacation home.' },
-      { label: 'Retirement Planning', href: '#goals-retirement', description: 'Build a corpus to maintain your lifestyle and independence post-career.' },
-      { label: "Children's Education", href: '#goals-education', description: 'Fund higher education at top-tier global institutions without stress.' },
-      { label: "Children's Wedding", href: '#goals-wedding', description: 'Prepare for your children’s milestone events in a structured manner.' },
-      { label: 'Wealth Creation', href: '#goals-wealth', description: 'Grow your purchasing power through disciplined equity compounding.' },
-      { label: 'Emergency Corpus', href: '#goals-emergency', description: 'Secure 6-12 months of living expenses in highly liquid, safe assets.' },
-      { label: 'Short-term Goals', href: '#goals-shortterm', description: 'Capital preservation strategies for horizons of less than 3 years.' }
+      { label: 'Dream Home', href: '/goal-planning#home', description: 'Plan and secure the capital for your primary residence or vacation home.' },
+      { label: 'Retirement Planning', href: '/goal-planning#retirement', description: 'Build a corpus to maintain your lifestyle and independence post-career.' },
+      { label: "Children's Education", href: '/goal-planning#education', description: 'Fund higher education at top-tier global institutions without stress.' },
+      { label: "Children's Wedding", href: '/goal-planning#wedding', description: 'Prepare for your children’s milestone events in a structured manner.' },
+      { label: 'Wealth Creation', href: '/goal-planning#wealth', description: 'Grow your purchasing power through disciplined equity compounding.' },
+      { label: 'Emergency Corpus', href: '/goal-planning#emergency', description: 'Secure 6-12 months of living expenses in highly liquid, safe assets.' },
+      { label: 'Short-term Goals', href: '/goal-planning#major-purchases', description: 'Capital preservation strategies for horizons of less than 3 years.' }
     ]
   },
   {
     label: 'Investments',
     href: '/investments',
     dropdownItems: [
-      { label: 'Mutual Funds', href: '#inv-mutual-funds', description: 'Diversified portfolios managed by professional fund houses.' },
-      { label: 'Equity & ETF', href: '#inv-equity', description: 'Direct participation in corporate growth with broad market indices.' },
-      { label: 'Fixed Income', href: '#inv-fixed-income', description: 'High-grade bonds and fixed yield papers for capital preservation.' },
-      { label: 'Smallcase', href: '#inv-smallcase', description: 'Thematic, transparent portfolios of direct equities and ETFs.' },
-      { label: 'PMS', href: '#inv-pms', description: 'Portfolio Management Services for customized, high-conviction portfolios.' },
-      { label: 'AIF', href: '#inv-aif', description: 'Alternative Investment Funds offering unique long-short or real estate strategies.' },
-      { label: 'Global Investing', href: '#inv-global', description: 'Geographical diversification across US equities and international index funds.' }
+      { label: 'Mutual Funds', href: '/investments#mutual-funds', description: 'Diversified portfolios managed by professional fund houses.' },
+      { label: 'Equity & ETF', href: '/investments#equity-etfs', description: 'Direct participation in corporate growth with broad market indices.' },
+      { label: 'Fixed Income', href: '/investments#fixed-income', description: 'High-grade bonds and fixed yield papers for capital preservation.' },
+      { label: 'Smallcase', href: '/investments#alternatives', description: 'Thematic, transparent portfolios of direct equities and ETFs.' },
+      { label: 'PMS', href: '/investments#alternatives', description: 'Portfolio Management Services for customized, high-conviction portfolios.' },
+      { label: 'AIF', href: '/investments#alternatives', description: 'Alternative Investment Funds offering unique long-short or real estate strategies.' },
+      { label: 'Global Investing', href: '/investments#global', description: 'Geographical diversification across US equities and international index funds.' }
     ]
   },
   {
     label: 'Smart Ideas',
     href: '/smart-ideas',
     dropdownItems: [
-      { label: 'Smart SIP', href: '#smart-sip', description: 'Optimized systematic investment plans utilizing market valuations.' },
-      { label: 'Smart Tax Planning', href: '#smart-tax', description: 'Legally minimize tax liabilities while building wealth via ELSS, PPF, etc.' }
+      { label: 'Smart SIP', href: '/smart-ideas#smart-sip', description: 'Optimized systematic investment plans utilizing market valuations.' },
+      { label: 'Smart Tax Planning', href: '/smart-ideas#asset-allocation', description: 'Legally minimize tax liabilities while building wealth via ELSS, PPF, etc.' }
     ]
   },
   {
     label: 'Value Added Services',
     href: '/value-added-services',
     dropdownItems: [
-      { label: 'Insurance', href: '#vas-insurance', description: 'Comprehensive risk coverage through Life, Medical, and General insurance.' },
-      { label: 'Loans', href: '#vas-loans', description: 'Mortgages, Personal, and Leverage against existing mutual funds.' },
-      { label: 'Estate Planning', href: '#vas-estate', description: 'Will drafting and documentation to ensure seamless inheritance.' }
+      { label: 'Insurance', href: '/value-added-services#insurance', description: 'Comprehensive risk coverage through Life, Medical, and General insurance.' },
+      { label: 'Loans', href: '/value-added-services#loans', description: 'Mortgages, Personal, and Leverage against existing mutual funds.' },
+      { label: 'Estate Planning', href: '/value-added-services#estate-planning', description: 'Will drafting and documentation to ensure seamless inheritance.' }
     ]
   },
   { label: 'Contact', href: '/contact' }

@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { TrendingUp, ShieldCheck, PieChart, Landmark, ArrowRight, BarChart3, Activity, Calculator } from 'lucide-react';
 
@@ -68,7 +69,18 @@ const smartStrategies = [
 ];
 
 export default function SmartIdeasPage() {
+  const location = useLocation();
   const [activeStrategyId, setActiveStrategyId] = useState(smartStrategies[0].id);
+
+  useEffect(() => {
+    if (location.hash) {
+      const hashId = location.hash.replace('#', '');
+      if (smartStrategies.some(s => s.id === hashId)) {
+        setActiveStrategyId(hashId);
+        setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
+      }
+    }
+  }, [location.hash]);
 
   return (
     <motion.div

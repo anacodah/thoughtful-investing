@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Check, Target, Calculator, Clock, Briefcase, Activity, ShieldCheck, Car, ShoppingBag, Plane, GraduationCap, Home, Heart, TrendingUp, AlertCircle, Sparkles, MonitorSmartphone } from 'lucide-react';
 
@@ -234,7 +235,18 @@ const lifeGoalsData = [
 ];
 
 export default function GoalPlanningPage() {
+  const location = useLocation();
   const [activeGoalId, setActiveGoalId] = useState(lifeGoalsData[0].id);
+
+  useEffect(() => {
+    if (location.hash) {
+      const hashId = location.hash.replace('#', '');
+      if (lifeGoalsData.some(g => g.id === hashId)) {
+        setActiveGoalId(hashId);
+        setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
+      }
+    }
+  }, [location.hash]);
 
   return (
     <motion.div 

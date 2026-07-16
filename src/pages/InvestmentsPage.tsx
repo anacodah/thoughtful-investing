@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { PieChart, Landmark, TrendingUp, Briefcase, Globe, ArrowRight, ShieldAlert } from 'lucide-react';
 
@@ -82,7 +83,19 @@ const investmentProducts = [
 ];
 
 export default function InvestmentsPage() {
+  const location = useLocation();
   const [activeProductId, setActiveProductId] = useState(investmentProducts[0].id);
+
+  useEffect(() => {
+    if (location.hash) {
+      const hashId = location.hash.replace('#', '');
+      if (investmentProducts.some(p => p.id === hashId)) {
+        setActiveProductId(hashId);
+        // Small delay to ensure render completes before scrolling to top
+        setTimeout(() => window.scrollTo({ top: 0, behavior: 'smooth' }), 100);
+      }
+    }
+  }, [location.hash]);
 
   return (
     <motion.div 
