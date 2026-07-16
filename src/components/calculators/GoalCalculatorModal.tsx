@@ -232,9 +232,13 @@ export default function GoalCalculatorModal({ goalId, onClose }: GoalCalculatorM
                     Discuss with an Advisor
                     <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </a>
-                  <div className="mt-3 flex items-center justify-center gap-1.5 text-[10px] text-slate-400">
-                    <ShieldCheck className="h-3.5 w-3.5" />
-                    <span>Calculations are indicative</span>
+                  <div className="mt-3 rounded-lg bg-amber-50 border border-amber-200/60 px-3 py-2.5">
+                    <div className="flex items-start gap-2">
+                      <ShieldCheck className="h-3.5 w-3.5 text-amber-500 shrink-0 mt-0.5" />
+                      <p className="text-[10px] leading-relaxed text-amber-700">
+                        <strong>Indicative only.</strong> Results are based on assumed rates and do not account for market volatility. Actual returns may vary. Mutual Fund investments are subject to market risks. Read all scheme-related documents carefully.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>

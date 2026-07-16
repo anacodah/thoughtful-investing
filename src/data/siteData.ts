@@ -118,7 +118,7 @@ export const GOALS: GoalItem[] = [
     id: 'retirement',
     title: 'Retirement Planning',
     iconName: 'TrendingUp',
-    description: 'Build a robust inflation-adjusted capital base to transition from active income to self-sustaining passive wealth, guaranteeing complete financial autonomy.',
+    description: 'Build a robust inflation-adjusted capital base to transition from active income to self-sustaining passive wealth, designed to support lasting financial independence.',
     ctaText: 'Design Your Retirement'
   },
   {
@@ -139,7 +139,7 @@ export const GOALS: GoalItem[] = [
     id: 'wealth-creation',
     title: 'Wealth Creation',
     iconName: 'Shield',
-    description: 'Aggressive yet disciplined capital compounding designed to build generational wealth and achieve complete financial independence ahead of schedule.',
+    description: 'Long-horizon, disciplined capital compounding designed to build generational wealth and work towards complete financial independence over time.',
     ctaText: 'Accelerate Wealth'
   },
   {
@@ -231,7 +231,7 @@ export const SMART_IDEAS = {
 export const VALUE_ADDED_SERVICES = {
   insurance: {
     title: 'Insurance & Risk Mitigation',
-    description: 'Wealth creation is meaningless without wealth protection. We analyze your liabilities and dependencies to recommend optimal, commission-free risk mitigation plans.',
+    description: 'Wealth creation is meaningless without wealth protection. We analyze your liabilities and dependencies to recommend transparent, need-based risk mitigation plans.',
     items: [
       { name: 'Life Insurance', detail: 'Pure Term plans designed to replace economic value and cover outstanding debt.' },
       { name: 'Medical Insurance', detail: 'Super Top-up structures and global covers to shield wealth from healthcare costs.' },
@@ -271,7 +271,6 @@ export const FOUNDER_DATA = {
     'Certified Financial Planner (CFP®) - Financial Planning Standards Board',
     'MBA in Finance - SPJIMR, Mumbai',
     'B.Com (Hons.) - St. Xavier\'s College, Kolkata',
-    'AMFI Registered Mutual Fund Advisor (ARN-189284)',
     '18+ Years of Private Wealth Experience'
   ]
 };

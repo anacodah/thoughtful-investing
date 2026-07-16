@@ -22,7 +22,7 @@ const GOALS = [
     icon: TrendingUp,
     tag: "📈 Retirement Tool",
     description:
-      "Build a robust inflation-adjusted capital base to transition from active income to self-sustaining passive wealth, guaranteeing complete financial autonomy.",
+      "Build a robust inflation-adjusted capital base to transition from active income to self-sustaining passive wealth, designed to support lasting financial independence.",
     image:
       "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=900",
     cta: "Design Your Retirement",
@@ -55,7 +55,7 @@ const GOALS = [
     icon: Shield,
     tag: "💼 Wealth Builder",
     description:
-      "Aggressive yet disciplined capital compounding designed to build generational wealth and achieve complete financial independence ahead of schedule.",
+      "Long-horizon, disciplined capital compounding designed to build generational wealth and work towards complete financial independence over time.",
     image:
       "https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&q=80&w=900",
     cta: "Accelerate Wealth",
