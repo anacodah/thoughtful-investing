@@ -13,7 +13,7 @@ export default function GoalCalculatorModal({ goalId, onClose }: GoalCalculatorM
   const [years, setYears] = useState<number>(10);
   const [expectedReturn, setExpectedReturn] = useState<number>(12); // 12% default
   const [inflation, setInflation] = useState<number>(6); // 6% default
-  
+
   // Specific state
   const [currentCost, setCurrentCost] = useState<number>(2000000); // 20 Lakhs default
   const [monthlyInvestment, setMonthlyInvestment] = useState<number>(10000); // For wealth creation
@@ -67,7 +67,7 @@ export default function GoalCalculatorModal({ goalId, onClose }: GoalCalculatorM
         const futureMonthlyExpense = calculateFutureValue(monthlyExpense, inflation, yrsToRetirement);
         const yearlyExpenseInRetirement = futureMonthlyExpense * 12;
         const targetCorpus = yearlyExpenseInRetirement * 25; // 4% rule (100/4 = 25x yearly expense)
-        
+
         setFutureValue(targetCorpus);
         setRequiredSIP(calculateRequiredSIP(targetCorpus, expectedReturn, yrsToRetirement));
       } else {
@@ -85,7 +85,7 @@ export default function GoalCalculatorModal({ goalId, onClose }: GoalCalculatorM
   if (!goalId) return null;
 
   const getTitle = () => {
-    switch(goalId) {
+    switch (goalId) {
       case 'dream-home': return 'Home Goal Planner';
       case 'retirement': return 'Retirement Calculator';
       case 'education': return 'Education Fund Calculator';
@@ -98,14 +98,14 @@ export default function GoalCalculatorModal({ goalId, onClose }: GoalCalculatorM
   return (
     <AnimatePresence>
       <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6 overflow-y-auto">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           onClick={onClose}
           className="absolute inset-0 bg-slate-900/60 backdrop-blur-sm"
         />
-        
+
         <motion.div
           initial={{ opacity: 0, scale: 0.95, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -124,7 +124,7 @@ export default function GoalCalculatorModal({ goalId, onClose }: GoalCalculatorM
                 <p className="text-sm text-slate-300">Plan your financial future with precision.</p>
               </div>
             </div>
-            <button 
+            <button
               onClick={onClose}
               className="p-2 rounded-full hover:bg-white/10 transition-colors text-slate-300 hover:text-white"
             >
@@ -135,11 +135,11 @@ export default function GoalCalculatorModal({ goalId, onClose }: GoalCalculatorM
           {/* Body */}
           <div className="p-6 sm:p-8 overflow-y-auto bg-slate-50 flex-grow">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              
+
               {/* Left: Inputs */}
               <div className="space-y-5">
                 <h4 className="text-sm font-bold uppercase tracking-wider text-slate-400 border-b border-slate-200 pb-2">Your Inputs</h4>
-                
+
                 {goalId === 'retirement' ? (
                   <>
                     <div>
@@ -202,7 +202,7 @@ export default function GoalCalculatorModal({ goalId, onClose }: GoalCalculatorM
               <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 flex flex-col justify-between">
                 <div>
                   <h4 className="text-sm font-bold uppercase tracking-wider text-teal border-b border-teal/10 pb-2 mb-6">Projections</h4>
-                  
+
                   <div className="space-y-6">
                     <div>
                       <p className="text-xs text-slate-500 font-medium mb-1">
@@ -226,7 +226,7 @@ export default function GoalCalculatorModal({ goalId, onClose }: GoalCalculatorM
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="mt-8 pt-6 border-t border-slate-100">
                   <a href="/contact" className="flex items-center justify-center gap-2 w-full bg-slate-900 hover:bg-slate-800 text-white py-3 px-4 rounded-xl text-sm font-semibold transition-colors group">
                     Discuss with an Advisor
