@@ -169,7 +169,7 @@ export default function ContactPage() {
                   </div>
                   <h4 className="font-serif text-2xl font-medium text-slate">Request Received</h4>
                   <p className="text-sm text-slate-light max-w-sm mx-auto">
-                    Thank you for reaching out. A senior wealth advisor will contact you shortly to confirm your consultation slot.
+                    Thank you for reaching out. A senior wealth consultant will contact you shortly to confirm your consultation slot.
                   </p>
                   <button
                     onClick={() => setStatus('idle')}
@@ -264,7 +264,7 @@ export default function ContactPage() {
                       value={formData.message}
                       onChange={handleChange}
                       className="w-full resize-none rounded-lg border border-slate-light/20 bg-slate-50 px-4 py-3 text-sm text-slate outline-none transition-all focus:border-teal focus:bg-white focus:ring-1 focus:ring-teal"
-                      placeholder="Briefly describe your current portfolio size or specific advisory needs..."
+                      placeholder="Briefly describe your current portfolio size or specific planning needs..."
                     />
                   </div>
 

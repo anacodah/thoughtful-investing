@@ -263,8 +263,8 @@ export const FOUNDER_DATA = {
   image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=600&h=750', // placeholder premium business portrait
   quote: 'Disciplined investing is not about beating the market; it is about controlling your own behavior and staying true to your goals.',
   bio: [
-    'Siddharth Mehta is a Certified Financial Planner (CFP) with over 18 years of experience in private wealth advisory and asset allocation. Prior to founding Thoughtful Investing, he served as Director of Wealth Advisory at a premier global banking institution, where he managed portfolios for high-net-worth families and corporate treasuries.',
-    'Disillusioned by the transactional, product-selling culture of corporate banking, Siddharth established Thoughtful Investing to focus strictly on goal-based planning, transparent advisory, and long-term client relations.',
+    'Siddharth Mehta is a Certified Financial Planner (CFP) with over 18 years of experience in private wealth management and asset allocation. Prior to founding Thoughtful Investing, he served as Director of Wealth Management at a premier global banking institution, where he managed portfolios for high-net-worth families and corporate treasuries.',
+    'Disillusioned by the transactional, product-selling culture of corporate banking, Siddharth established Thoughtful Investing to focus strictly on goal-based planning, transparent guidance, and long-term client relations.',
     'Under his leadership, the firm has grown to manage wealth for over 450 families, focusing on asset allocation discipline, emotional coaching during market cycles, and robust multi-generational planning.'
   ],
   credentials: [

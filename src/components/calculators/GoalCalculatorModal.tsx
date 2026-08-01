@@ -229,7 +229,7 @@ export default function GoalCalculatorModal({ goalId, onClose }: GoalCalculatorM
 
                 <div className="mt-8 pt-6 border-t border-slate-100">
                   <a href="/contact" className="flex items-center justify-center gap-2 w-full bg-slate-900 hover:bg-slate-800 text-white py-3 px-4 rounded-xl text-sm font-semibold transition-colors group">
-                    Discuss with an Advisor
+                    Discuss with Us
                     <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   </a>
                   <div className="mt-3 rounded-lg bg-amber-50 border border-amber-200/60 px-3 py-2.5">

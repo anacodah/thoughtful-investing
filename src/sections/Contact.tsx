@@ -116,7 +116,7 @@ export default function Contact() {
                   <Phone className="h-5 w-5" />
                 </div>
                 <div>
-                  <h4 className="text-xs font-bold uppercase tracking-wider text-slate-light">Call Advisory Line</h4>
+                  <h4 className="text-xs font-bold uppercase tracking-wider text-slate-light">Call Us</h4>
                   <p className="text-sm font-semibold text-slate mt-0.5">{CONTACT_INFO.phone}</p>
                 </div>
               </a>
@@ -155,7 +155,7 @@ export default function Contact() {
                   </div>
                   <h3 className="font-serif text-2xl font-bold text-slate">Thank You</h3>
                   <p className="text-sm text-slate-light max-w-sm leading-relaxed">
-                    Your financial planning inquiry has been received. Siddharth or one of our senior advisors will contact you shortly.
+                    Your financial planning inquiry has been received. Siddharth or a senior team member will contact you shortly.
                   </p>
                   <button
                     onClick={() => setStatus('idle')}

@@ -97,7 +97,7 @@ export default function SmartIdeasPage() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-teal-500/20 rounded-full blur-[100px] pointer-events-none"></div>
 
         <div className="relative z-10 max-w-3xl mx-auto">
-          <span className="text-xs font-bold uppercase tracking-widest text-teal-400 mb-4 block">Strategic Advisory</span>
+          <span className="text-xs font-bold uppercase tracking-widest text-teal-400 mb-4 block">Strategic Insights</span>
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">Smart Ideas</h1>
           <p className="text-cyan-100/80 text-lg md:text-xl font-light leading-relaxed">
             Advanced strategies for wealth accumulation, risk mitigation, and tax optimization to help you invest smarter.

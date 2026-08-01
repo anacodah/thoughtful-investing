@@ -26,7 +26,7 @@ export default function Footer() {
               <li><a href="#goals" className="text-slate-light/80 hover:text-teal transition-colors flex items-center">Goal Based Planning</a></li>
               <li><a href="#investments" className="text-slate-light/80 hover:text-teal transition-colors flex items-center">Mutual Funds & PMS</a></li>
               <li><a href="#smart-ideas" className="text-slate-light/80 hover:text-teal transition-colors flex items-center">Smart SIP Strategies</a></li>
-              <li><a href="#value-added" className="text-slate-light/80 hover:text-teal transition-colors flex items-center">Estate & Tax Advisory</a></li>
+              <li><a href="#value-added" className="text-slate-light/80 hover:text-teal transition-colors flex items-center">Estate & Tax Planning</a></li>
             </ul>
           </div>
 

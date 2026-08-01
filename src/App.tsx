@@ -102,7 +102,7 @@ export default function App() {
                   lastUpdated="July 2026"
                   content={[
                     "At Thoughtful Investing, we prioritize the protection of your personal and financial data. This privacy policy details how we gather, store, and utilize details when you interact with our website or book consultation services.",
-                    "We collect basic contact info (such as name, email, phone number, and financial planning goals) explicitly provided by you through our consultation lead form. We use this detail solely to contact you and customize our financial advisory offerings.",
+                    "We collect basic contact info (such as name, email, phone number, and financial planning goals) explicitly provided by you through our consultation lead form. We use this detail solely to contact you and customize our financial planning offerings.",
                     "We do not share, sell, or disclose client details to third-party marketing entities. Information is only shared with regulatory platforms or financial institutions (like mutual fund houses or registrars) to execute transactions requested by you.",
                     "Our digital environments employ standard secure sockets layer (SSL) encryption protocol. You retain full rights to request auditing, correction, or removal of your contact details from our active outreach list at any time."
                   ]}
@@ -133,7 +133,7 @@ export default function App() {
                   content={[
                     "In compliance with AMFI and SEBI guidelines, Thoughtful Investing (ARN-189284) provides comprehensive disclosures regarding the commission models and transaction standards associated with mutual fund distribution.",
                     "We operate as a Mutual Fund Distributor and receive distribution commissions from Asset Management Companies (AMCs) for products distributed. These commissions are paid out of the scheme expense ratios and are disclosed transparently to clients prior to execution.",
-                    "Commission structures vary across asset schemes (Equity, Debt, Hybrid, Liquid) and AMCs, ranging between 0.10% and 1.50% per annum on the assets under advisory. A detailed AMC-wise commission chart is available upon request at our BkC, Mumbai office.",
+                    "Commission structures vary across asset schemes (Equity, Debt, Hybrid, Liquid) and AMCs, ranging between 0.10% and 1.50% per annum on the assets under management. A detailed AMC-wise commission chart is available upon request at our BkC, Mumbai office.",
                     "Clients are under no obligation to transact through our distributor channel and may choose to invest directly in direct plans of mutual funds at AMC portals."
                   ]}
                 />

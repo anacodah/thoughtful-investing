@@ -130,7 +130,7 @@ function LoansContent() {
           <Users className="h-5 w-5 text-teal" />
         </div>
         <p className="text-sm text-slate-600 leading-relaxed">
-          Our advisors help you compare eligible offers across lenders and choose the solution best suited to your financial profile.
+          Our team helps you compare eligible offers across lenders and choose the solution best suited to your financial profile.
         </p>
       </div>
     </div>

@@ -195,7 +195,7 @@ export default function InvestmentsPage() {
         <div className="mt-24 max-w-4xl mx-auto bg-slate-50 border border-slate-200 rounded-2xl p-6 md:p-8 flex items-start space-x-4">
           <ShieldAlert className="h-6 w-6 text-slate-400 shrink-0 mt-1" />
           <div>
-            <h4 className="font-bold text-slate-700 mb-2">Our Advisory Role</h4>
+            <h4 className="font-bold text-slate-700 mb-2">Our Role</h4>
             <p className="text-sm text-slate-500 leading-relaxed">
               Our role is to help investors understand available options, product structures, eligibility criteria, and associated risks, enabling informed investment decisions. All investments are subject to market risks. Please read all scheme related documents carefully.
             </p>

@@ -32,7 +32,7 @@ const SERVICES = [
     items: [
       { name: 'Home Loans', detail: 'New purchase financing, balance transfers, and rate optimisations.' },
       { name: 'Loan Against MF', detail: 'Instant liquidity against your portfolio without triggering tax events.' },
-      { name: 'Premium Credit Advisory', detail: 'Tailored advice on high-reward spending and credit systems.' },
+      { name: 'Premium Credit Solutions', detail: 'Tailored guidance on high-reward spending and credit systems.' },
       { name: 'Short-term Credit', detail: 'Structured solutions for working capital or bridge financing.' },
     ],
     gradient: 'linear-gradient(135deg, #0E4C7A 0%, #1D6FA4 40%, #0E7C86 100%)',

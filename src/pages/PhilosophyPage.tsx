@@ -78,7 +78,7 @@ export default function PhilosophyPage() {
               <div>
                 <h3 className="font-serif text-2xl font-bold text-slate mb-2">Core Principles</h3>
                 <p className="text-slate-500 text-sm leading-relaxed">
-                  The foundational tenets that guide our asset allocation and advisory processes.
+                  The foundational tenets that guide our asset allocation and planning processes.
                 </p>
               </div>
               
