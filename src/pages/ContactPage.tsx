@@ -143,18 +143,6 @@ export default function ContactPage() {
 
             </div>
 
-            <div className="rounded-xl bg-white p-6 border border-slate-100 shadow-sm mt-8">
-              <div className="flex flex-col gap-1">
-                <span className="text-[10px] font-bold uppercase tracking-wider text-gold">Office Location</span>
-                <p className="text-sm text-slate leading-relaxed pt-1 pb-3 border-b border-slate-100">
-                  {CONTACT_INFO.address}
-                </p>
-                <span className="text-[10px] font-bold uppercase tracking-wider text-gold mt-3">Working Hours</span>
-                <p className="text-sm text-slate pt-1">
-                  {CONTACT_INFO.workingHours}
-                </p>
-              </div>
-            </div>
           </div>
 
           {/* Form Right Column */}
